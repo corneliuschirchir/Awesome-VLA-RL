@@ -1,8 +1,6 @@
 # Awesome-VLA-RL
 
-With significant advances in **Vision-Language-Action (VLA)🍔** models based on large-scale imitation learning, integrating VLA with **Reinforcement Learning (RL)🥤** has emerged as a promising paradigm. 
-
-This paradigm leverages the benefits of trial-and-error interactions with environments or pre-collected sub-optimal data.
+With significant advances in **Vision-Language-Action (VLA)🍔** models based on large-scale imitation learning, integrating VLA with **Reinforcement Learning (RL)🥤** has emerged as a promising paradigm. This paradigm leverages the benefits of trial-and-error interactions with environments or pre-collected sub-optimal data.
 
 This repository summarizes recent advances in the **VLA🍔 + RL🥤** paradigm and provides a classification of relevant works (offline RL training(without env.), online RL training(with env.), test-time RL(during deployment), and RL alignment).
 
@@ -17,10 +15,9 @@ The Offline RL pre-trained VLA models leverage both human demonstrations and aut
 | Method | Title | Venue | Date | Code/Project | Key feature/finding |
 | --- | --- | --- | --- | --- | --- |
 | [Q-Transformer](https://arxiv.org/abs/2309.10150) | Q-Transformer: Scalable Offline Reinforcement Learning via Autoregressive Q-Functions | Arxiv | 18/9/2023 | [Github](https://github.com/lucidrains/q-transformer) | <details><summary>Details</summary>offline Q-learning with Transformer models: 1. Autoregressive Discrete Q-Learning; 2. Conservative Q-Learning; 3. Monte Carlo and n-step Returns</details> |
-| [ReinboT](https://arxiv.org/abs/2505.07395) | ReinboT: Amplifying Robot Visual-Language Manipulation with Reinforcement Learning | ICML2025 | 12/5/2025 |  | <details><summary>Details</summary>Max-Return Sequence Modeling as Reinformer; Reward Densification with heuristic methods</details> |
+| [Perceiver-Actor-Critic](https://arxiv.org/abs/2402.05546) | Offline Actor-Critic Reinforcement Learning Scales to Large Models | ICML2024 | 8/2/2024 | [Project](https://sites.google.com/view/perceiver-actor-critic) | <details><summary>Details</summary>An offline actor-critic method that scales to large models of up to 1B parameters and learn a wide variety of 132 control and robotics tasks</details> |
 | [GeRM](https://arxiv.org/abs/2403.13358) | GeRM: A Generalist Robotic Model with Mixture-of-experts for Quadruped Robot | IROS2024 | 20/3/2024 | [Github](https://github.com/Songwxuan/GeRM) | <details><summary>Details</summary>Mixtureof-Experts structure; Quadruped robot learning</details> |
-
-<details><summary>Details</summary> </details>
+| [ReinboT](https://arxiv.org/abs/2505.07395) | ReinboT: Amplifying Robot Visual-Language Manipulation with Reinforcement Learning | ICML2025 | 12/5/2025 |  | <details><summary>Details</summary>Max-Return Sequence Modeling as Reinformer; Reward Densification with heuristic methods</details> |
 
 
 # **Online RL**
@@ -30,6 +27,7 @@ With trial-and-error interactions in online environments, VLA models can be furt
 
 | Method | Title | Venue | Date | Code/Project | Key feature/finding |
 | --- | --- | --- | --- | --- | --- |
+| [PA-RL](https://arxiv.org/abs/2503.05833) | Policy Agnostic RL: Offline RL and Online RL Fine-Tuning of Any Class and Backbone | Arxiv | 9/12/2024 | [Project](https://policyagnosticrl.github.io/) | <details><summary>Details</summary>a single method that fine-tunes multiple policy classes, with varying architectures and sizes. It enables sample-efficient improvement of diffusion and transformer-based autoregressive policies. PA-RL sets a new state of the art for offline to online RL, and **it makes it possible, for the first time, to improve OpenVLA** </details> |
 | [iRe-VLA](https://arxiv.org/abs/2501.16664) | Improving Vision-Language-Action Model with Online Reinforcement Learning | RAL2025 | 28/1/2025 |  | <details><summary>Details</summary>Adopt SFT & RL two-stage iterative optimization to **Stabilizing Training Process** and **Managing the Model Training Burden**.</details> |
 | [RIPT-VLA](https://arxiv.org/abs/2505.17016) | Interactive Post-Training for Vision-Language-Action Models | Arxiv | 22/5/2025 | [Github](https://github.com/Ariostgx/ript-vla) | <details><summary>Details</summary>A critic-free optimization framework called Leave-One-Out Proximal Policy Optimization (LOOP); Dynamic rollout sampling</details> |
 | [VLA-RL](https://arxiv.org/abs/2505.18719) | VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable Reinforcement Learning | Arxiv | 24/5/2025 | [Github](https://github.com/GuanxingLu/vlarl) | <details><summary>Details</summary>Robotic process reward model and the VLA-RL System with (1) Curriculum Selection Strategy (2) Critic Warmup (3) GPU-balanced Vectorized Environments (4) PPO infrastructure</details> |
@@ -42,6 +40,7 @@ With trial-and-error interactions in online environments, VLA models can be furt
 | Method | Title | Venue | Date | Code/Project | Key feature/finding |
 | --- | --- | --- | --- | --- | --- |
 | [RLDG](https://arxiv.org/abs/2412.09858) | RLDG: Robotic Generalist Policy Distillation via Reinforcement Learning | RSS2025 | 12/2024 | [Project](https://generalist-distillation.github.io/) | <details><summary>Details</summary>Pretrain task-specific RL policies with HIL-SERL; Distill RL policies into VLA for Knowledge Transfer.</details> |
+| [PA-RL](https://arxiv.org/abs/2503.05833) | Policy Agnostic RL: Offline RL and Online RL Fine-Tuning of Any Class and Backbone | Arxiv | 9/12/2024 | [Project](https://policyagnosticrl.github.io/) | <details><summary>Details</summary>a single method that fine-tunes multiple policy classes, with varying architectures and sizes. It enables sample-efficient improvement of diffusion and transformer-based autoregressive policies. PA-RL sets a new state of the art for offline to online RL, and **it makes it possible, for the first time, to improve OpenVLA** </details> |
 | [ConRFT](https://arxiv.org/abs/2502.05450) | ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy | RSS2025 | 14/4/2025 | [Github](https://github.com/cccedric/conrft) | <details><summary>Details</summary>Offline fine-tuning(Cal-QL+PA-RL) and online fine-tuning(CPQL+HIL-SERL+PA-RL) </details> |
 | DYNA-1 | Dynamism v1 (DYNA-1) Model: A Breakthrough in Performance and Production-Ready Embodied AI |  | 5/2025 | [Project](https://www.dyna.co/research) | |
 
