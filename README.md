@@ -18,6 +18,7 @@ The Offline RL pre-trained VLA models leverage both human demonstrations and aut
 | [Perceiver-Actor-Critic](https://arxiv.org/abs/2402.05546) | Offline Actor-Critic Reinforcement Learning Scales to Large Models | ICML2024 | 8/2/2024 | [Project](https://sites.google.com/view/perceiver-actor-critic) | <details><summary>Details</summary>An offline actor-critic method that scales to large models of up to 1B parameters and learn a wide variety of 132 control and robotics tasks</details> |
 | [GeRM](https://arxiv.org/abs/2403.13358) | GeRM: A Generalist Robotic Model with Mixture-of-experts for Quadruped Robot | IROS2024 | 20/3/2024 | [Github](https://github.com/Songwxuan/GeRM) | <details><summary>Details</summary>Mixtureof-Experts structure; Quadruped robot learning</details> |
 | [ReinboT](https://arxiv.org/abs/2505.07395) | ReinboT: Amplifying Robot Visual-Language Manipulation with Reinforcement Learning | ICML2025 | 12/5/2025 |  | <details><summary>Details</summary>Max-Return Sequence Modeling as Reinformer; Reward Densification with heuristic methods</details> |
+| [MoRE](https://arxiv.org/abs/2503.08007) | MoRE: Unlocking Scalability in Reinforcement Learning for Quadruped Vision-Language-Action Models | ICRA2025 | 11/3/2025 |  | <details><summary>Details</summary>Integrates multiple low-rank adaptation modules as distinct experts within a dense multi-modal large language model (MLLM), forming a sparse-activated mixture-of-experts model</details> |
 
 
 # **Online RL**
